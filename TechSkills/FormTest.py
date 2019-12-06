@@ -5,11 +5,7 @@ import matplotlib.pyplot as plt
 import webbrowser
 import time
 
-#Structure
-#personalInfo[0] = name
-#personalInfo[1] = name
-#personalInfo[2] = name
-#personalInfo[3] = name
+
 personalInfo = ["name","name","year","Contact Number"]
 
 #when the button "submit" is clicked, it will produce a new window with the graph.
@@ -48,8 +44,6 @@ def clicked(*args):
     
     newWindow()
 
-    # Create bars
-    
 
 
 #window names and formatting
