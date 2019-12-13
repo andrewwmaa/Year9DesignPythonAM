@@ -23,11 +23,27 @@ dataList = dataString.split("\n")
 #	the order you need to make a copy of the 
 #	information
 #
-print(dataList)
+#print(dataList)
 
 #Big Skill: Looping through a list using counted loop.  
-for i in range(0, len(dataList),1):
-	dataList[i] = dataList[i].replace(",","")
-	dataList[i] = float(dataList[i])
 
-print(dataList)
+#print(dataList)
+
+
+maximum = max(dataList)
+print(maximum)
+minimum = min(dataList)
+diff = maximum - minimum
+smallest = dataList[0]
+for i in range(0, len(dataList),1):
+	if smallest > dataList[i]:
+		smallest = dataList[i]
+
+print("minimum is" + str(smallest))
+
+ctr = 0
+for i in range(0, len(dataList), 1):
+	if (dataList[i] < 100):
+		ctr = ctr+1
+		Qprint (dataList[i])
+
